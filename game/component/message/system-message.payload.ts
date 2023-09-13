@@ -1,5 +1,5 @@
-import IMessage from "./message.interface";
+import ISystemMessage from "./system-message.interface";
 
 export default interface SystemMessagePayload {
-    message: IMessage<any>
+    message: ISystemMessage;
 }
