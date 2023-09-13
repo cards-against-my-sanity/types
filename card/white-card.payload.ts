@@ -1,5 +1,5 @@
-import { WhiteCard } from "src/cards/entities/white-card.entity";
+import IWhiteCard from "./white-card.interface";
 
 export default interface WhiteCardPayload {
-    card: WhiteCard
+    card: IWhiteCard;
 }

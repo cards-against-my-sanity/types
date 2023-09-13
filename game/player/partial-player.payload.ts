@@ -1,3 +1,5 @@
-import PlayerPayload from "./player.payload";
+import IPlayer from "./player.interface";
 
-export default interface PartialPlayerPayload extends Partial<PlayerPayload> {}
+export default interface PartialPlayerPayload {
+    player: Partial<IPlayer>;
+}

@@ -1,8 +1,5 @@
-import { PlayerState } from "src/games/player-state.enum";
+import IPlayer from "./player.interface";
 
 export default interface PlayerPayload {
-    id: string;
-    nickname: string;
-    state: PlayerState;
-    score: number;
+    player: IPlayer;
 }

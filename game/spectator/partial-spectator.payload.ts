@@ -1,3 +1,5 @@
-import SpectatorPayload from "./spectator.payload";
+import ISpectator from "./spectator.interface";
 
-export default interface PartialSpectatorPayload extends Partial<SpectatorPayload> {}
+export default interface PartialSpectatorPayload {
+    spectator: Partial<ISpectator>;
+}

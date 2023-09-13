@@ -1,4 +1,5 @@
+import ISpectator from "./spectator.interface";
+
 export default interface SpectatorPayload {
-    id: string;
-    nickname: string;
+    spectator: ISpectator;
 }

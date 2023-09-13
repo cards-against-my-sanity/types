@@ -1,5 +1,5 @@
-import { Deck } from "src/decks/entities/deck.entity";
+import IDeck from "./deck.interface";
 
 export default interface DecksPayload {
-    decks: Deck[]
+    decks: IDeck[];
 }

@@ -1,5 +1,5 @@
-import { BlackCard } from "src/cards/entities/black-card.entity";
+import { IBlackCard } from "./black-card.interface";
 
 export default interface BlackCardPayload {
-    card: BlackCard
+    card: IBlackCard;
 }
