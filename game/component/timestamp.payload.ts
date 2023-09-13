@@ -1,3 +1,3 @@
 export default interface TimestampPayload {
-    timestamp: string
+    timestamp: number;
 }
