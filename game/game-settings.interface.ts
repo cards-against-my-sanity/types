@@ -5,5 +5,4 @@ export default interface IGameSettings {
     roundIntermissionSeconds: number;
     gameWinIntermissionSeconds: number;
     allowPlayersToJoinMidGame: boolean;
-    hasPassword: boolean;
 }
