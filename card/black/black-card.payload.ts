@@ -1,4 +1,4 @@
-import { IBlackCard } from "./black-card.interface";
+import IBlackCard from "./black-card.interface";
 
 export default interface BlackCardPayload {
     card: IBlackCard;
