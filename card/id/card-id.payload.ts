@@ -1,3 +1,3 @@
-export default interface CardIdsPayload {
+export default interface CardIdPayload {
     cardId: string
 }
