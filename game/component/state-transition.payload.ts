@@ -1,7 +1,6 @@
 import { GameState } from "../game-state.enum";
 
-export default interface StateTransitionPayload<T> {
+export default interface StateTransitionPayload {
     to: GameState,
-    from: GameState,
-    context?: T
+    from: GameState
 }
