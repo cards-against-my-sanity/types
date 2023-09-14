@@ -5,4 +5,5 @@ export default interface IPlayer {
     nickname: string;
     state: PlayerState;
     score: number;
+    needToPlay: boolean;
 }
