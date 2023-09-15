@@ -1,6 +1,6 @@
 import IUserPermission from "./user-permission.interface";
 
-export interface IUser {
+export default interface IUser {
     id: string,
     nickname: string,
     email?: string,

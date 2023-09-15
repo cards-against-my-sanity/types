@@ -1,6 +1,7 @@
 import { PermissionCategory } from "./permission-category.enum";
+import IUser from "../user/user.interface";
 
-export class Permission {
+export default class Permission {
     // generic permissions
     static readonly AllGeneric = new Permission(PermissionCategory.Generic, 0x7FFFFFFF);
     static readonly ReportContent = new Permission(PermissionCategory.Generic, 1 << 0);
@@ -63,5 +64,25 @@ export class Permission {
 
     getValue(): number {
         return this.value;
+    }
+
+    static testPermission(user: IUser, permission: Permission): boolean {
+        return (user.permissions[this.getPermissionSetName(permission.category)] & permission.value) 
+            === permission.value;
+    }
+
+    static getPermissionSetName(category: PermissionCategory): string {
+        switch (category) {
+            case PermissionCategory.Generic:
+                return "generic_permissions";
+            case PermissionCategory.Gameplay:
+                return "gameplay_permissions";
+            case PermissionCategory.Contributor:
+                return "contributor_permissions";
+            case PermissionCategory.Moderator:
+                return "moderator_permissions";
+            case PermissionCategory.Admin:
+                return "admin_permissions";
+        }
     }
 }
